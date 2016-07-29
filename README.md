@@ -1,4 +1,4 @@
-# <center>玩转iOS开发：《使用系统自带的UIActivityViewController和UIActivity进行内容分享》</center>
+# <center>玩转iOS开发：《使用自定义UIActivity进行内容分享》</center>
 
 ---
 ###简介
@@ -281,7 +281,7 @@
 ---
 ###GitHub工程地址
 
-工程地址: https://github.com/CainRun/ActivityControllerDemo
+工程地址: https://github.com/CainRun/ActivityControllerDemo/tree/master/UIActivityViewControllerDemo
 
 ---
 ### 结束语
