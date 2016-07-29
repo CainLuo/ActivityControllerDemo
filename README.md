@@ -19,23 +19,23 @@
 ---
 ###创建新工程
 
-![1 | center | 1080x0](./1.png)
-![2 | center | 1080x0](./2.png)
+![1 | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/1.png)
+![2 | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/2.png)
 
 ---
 ###创建一个继承与UIActivityViewController的类
 
-![3 | center | 1080x0](./3.png)
-![4 | center | 1080x0](./4.png)
+![3 | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/3.png)
+![4 | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/4.png)
 
 ---
 ###创建一个继承与UIActivity的类
 
-![5 | center | 1080x0](./5.png)
+![5 | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/5.png)
 
 > 这时候我们就要来给这个自定义的**`UIActivity`**类写上我们需要的内容, 首先我们可以去到系统提供的**`UIActivity`**头文件看**`API`**, 获取我们所需的**`API`**.
 
-![6  | center | 1080x0](./6.png)
+![6  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/6.png)
 
 ---
 ###配置UIActivity和UIActivityViewController
@@ -43,7 +43,7 @@
 
 > 下面是我写好的自定义**`WeiboActivity`** **`API`**
 
-![7  | center | 1080x0](./7.png)
+![7  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/7.png)
 
 > 代码:
 
@@ -76,7 +76,7 @@
 
 > 下面是我写好的自定义**`UIActivityController`**
 
-![8  | center | 1080x0](./8.png)
+![8  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/8.png)
 
 > 代码:
 
@@ -137,7 +137,7 @@
 >
 > PS: 注意一点, 这个赋值只能在**`initWithActivityItems: applicationActivities:`**这个方法的**`applicationActivities:`**赋值, 而且只能在初始化的时候赋值, 一旦赋值之后就不能再修改了.
 
-![9  | center | 1080x0](./9.png)
+![9  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/9.png)
 
 ---
 ###调起UIActivityViewController
@@ -146,7 +146,7 @@
 >
 > 首先我们要在**`Main.storyboard`**中拖一个**`UIButton`**, 然后添加对应的代码.
 
-![10  | center | 1080x0](./10.png)
+![10  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/10.png)
 
 > 代码: 
 
@@ -185,11 +185,11 @@
 
 > 最后我们运行一下看看效果
 
-![10  | center | 720x0](./11.png)
+![10  | center | 720x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/11.png)
 
 > 发现什么都没有, 肯定在喷我, 觉得我是在耍你们, 哈哈, 其实在这里我们少了一个方法没有添加, 回到我们自定义的**`WeiboActivity`**中, 添加上就OK了
 
-![12  | center | 1080x0](./12.png)
+![12  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/12.png)
 
 > 代码:
 
@@ -207,13 +207,13 @@
 
 > 再来运行看看效果
 
-![13  | center | 720x0](./13.png)
+![13  | center | 720x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/13.png)
 
 > 好了, **`item`**出来了, 但好像有什么不对, 图标呢???!!! 为啥是灰色的? 楼主你耍我, 我要去爆你菊花!!!!!
 >
 > 别紧张, 在系统默认的**`UIActivityViewController`**中, 下面这部分是属于系统服务, 默认只会显示一个轮廓, 并不会显示整张图片, 下面我们把自定义的**`WeiboActivity`**显示图片的方法改改就好了.
 
-![14  | center | 1080x0](./14.png)
+![14  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/14.png)
 
 > 代码:
 
@@ -223,7 +223,7 @@
     return [UIImage imageNamed:@"ShareBundle.bundle/share_icon_1"];
 }
 ```
-![15  | center | 720x0](./15.png)
+![15  | center | 720x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/15.png)
 
 > 好了, 我的菊花保住了, 图标出来了, 把我吓了一身冷汗
 >
@@ -231,7 +231,7 @@
 >
 > 我一般喜欢写个**`Block`**把点击事件抛出去做处理, 这次我也不例外~~
 
-![16  | center | 1080x0](./16.png)
+![16  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/16.png)
 
 > 代码:
 
@@ -245,7 +245,7 @@
 }
 ```
 
-![17  | center | 1080x0](./17.png)
+![17  | center | 1080x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/17.png)
 
 > 代码: 
 
@@ -276,7 +276,7 @@
 ---
 ###最终效果
 
-![15  | center | 720x0](./18.png)
+![15  | center | 720x0](https://github.com/CainRun/ActivityControllerDemo/blob/master/Image-file/18.png)
 
 ---
 ###GitHub工程地址
